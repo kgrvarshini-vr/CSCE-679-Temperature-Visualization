@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong Kong Temperature Visualization</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
+    <style>
+        .maximum-line {
+            color: #008000;
+        }
+
+        .minimum-line {
+            color: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hong Kong Temperature Visualization</h1>
+
+    <!-- Level 1: Monthly temperature heatmap -->
+    <h2>Level 1: Monthly Temperature Heatmap</h2>
+
+    <label for="temperature-mode">Show temperature:</label>
+    <select id="temperature-mode">
+        <option value="max">Maximum Temperature</option>
+        <option value="min">Minimum Temperature</option>
+    </select>
+
+    <div id="heatmap"></div>
+
+    <!-- Level 2: Daily temperature patterns -->
+    <h2>Level 2: Daily Temperature Patterns</h2>
+    <div id="heatmap-level2"></div>
+
+    <p>
+        <span class="maximum-line">━━</span> Daily Maximum Temperature
+        &nbsp;&nbsp;
+        <span class="minimum-line">━━</span> Daily Minimum Temperature
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
